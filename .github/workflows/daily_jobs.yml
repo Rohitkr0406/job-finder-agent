@@ -38,12 +38,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── 5. Restore resume from GitHub secret ─────────────────────────────
-      #    Your resume PDF is stored as a base64 secret (see setup guide).
-      - name: Decode resume
+      # ── 5. Download resume from secret URL ──────────────────────────────
+      - name: Download resume
         run: |
           mkdir -p data
-          echo "${{ secrets.RESUME_BASE64 }}" | base64 --decode > data/resume.pdf
+          curl -L -o data/resume.pdf "${{ secrets.RESUME_URL }}"
 
       # ── 6. Run the agent ─────────────────────────────────────────────────
       - name: Run Job Finder Agent
