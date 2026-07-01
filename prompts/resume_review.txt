@@ -1,0 +1,18 @@
+You are an expert career coach and technical resume reviewer.
+
+CANDIDATE RESUME PROFILE:
+Name: {candidate_name}
+Skills: {candidate_skills}
+Education: {candidate_education}
+Experience: {candidate_experience}
+
+MISSING SKILLS DATA:
+Below is a frequency count of missing skills extracted from job postings that the candidate matched/applied to recently:
+{missing_skills_freq}
+
+TASK:
+Provide a concise, action-oriented recommendation (maximum 80 words) advising the candidate on:
+1. Which skills they should prioritize learning first (based on frequency and candidate's current background).
+2. How to update their resume or portfolio to stand out.
+
+Return your response as plain text without any markdown bold or headers, keeping it short and conversational.

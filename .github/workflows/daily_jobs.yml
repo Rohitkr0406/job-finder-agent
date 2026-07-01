@@ -1,0 +1,68 @@
+name: 🤖 Daily Job Finder
+
+on:
+  schedule:
+    # 09:30 IST  =  04:00 UTC
+    - cron: "0 4 * * *"
+  workflow_dispatch:        # also allow manual trigger from GitHub UI
+
+permissions:
+  contents: write           # needed to commit seen_jobs.db back to repo
+
+jobs:
+  find-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout ───────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Python ────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      # ── 3. Cache pip packages ─────────────────────────────────────────────
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      # ── 4. Install deps ───────────────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── 5. Restore resume from GitHub secret ─────────────────────────────
+      #    Your resume PDF is stored as a base64 secret (see setup guide).
+      - name: Decode resume
+        run: |
+          mkdir -p data
+          echo "${{ secrets.RESUME_BASE64 }}" | base64 --decode > data/resume.pdf
+
+      # ── 6. Run the agent ─────────────────────────────────────────────────
+      - name: Run Job Finder Agent
+        env:
+          LLM_PROVIDER:       ${{ secrets.LLM_PROVIDER }}
+          LLM_MODEL:          ${{ secrets.LLM_MODEL }}
+          LLM_API_KEY:        ${{ secrets.LLM_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          TOP_N:              "25"
+          MIN_SCORE:          "45"
+        run: python main.py
+
+      # ── 7. Persist databases so dedup works tomorrow ──────────────────────
+      - name: Commit updated databases
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/jobs.db data/analytics.db
+          git add data/discovered_greenhouse.json data/discovered_lever.json
+          git diff --staged --quiet || \
+            (git commit -m "chore: update database files [skip ci]" && git push)

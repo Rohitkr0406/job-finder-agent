@@ -1,0 +1,37 @@
+# Secrets & local config
+.env
+run_agent.bat
+.vscode/
+
+# Databases
+data/*.db
+
+# Cache files
+data/resume_profile.json
+
+# Resume (stored as GitHub secret, not committed to repo)
+data/resume.pdf
+data/resume.txt
+data/resume.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+.env.example
+
+# OS
+.DS_Store
+Thumbs.db

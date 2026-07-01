@@ -1,0 +1,49 @@
+{
+  "experience": 0,
+  "remote": true,
+  "india": true,
+  "internships": true,
+  "require_salary": false,
+  "excluded_departments": [
+    "sales",
+    "marketing",
+    "hr",
+    "recruiting",
+    "legal",
+    "finance",
+    "design",
+    "operations",
+    "support",
+    "admin"
+  ],
+  "preferred_locations": [
+    "patna",
+    "bangalore",
+    "bengaluru",
+    "hyderabad",
+    "pune",
+    "noida",
+    "gurgaon",
+    "mumbai",
+    "chennai",
+    "remote",
+    "india"
+  ],
+  "preferred_roles": [
+    "backend",
+    "software engineer",
+    "fullstack",
+    "python",
+    "developer",
+    "data engineer",
+    "javascript developer"
+  ],
+  "weights": {
+    "skills": 0.4,
+    "experience": 0.2,
+    "location": 0.1,
+    "title_similarity": 0.1,
+    "remote_preference": 0.1,
+    "education": 0.1
+  }
+}

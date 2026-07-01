@@ -1,0 +1,68 @@
+# Lever Company Slugs
+# ─────────────────────────────────────────────────────────────────────────────
+# One slug per line. Lines starting with # are comments.
+# Verify a slug works: https://api.lever.co/v0/postings/{slug}?mode=json
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── AI / ML / Data ───────────────────────────────────────────────────────────
+adept
+inflection
+supabase
+prefect
+dbtlabs
+vercel
+retool
+together
+hotjar
+medium
+docker
+github
+huggingface
+runway
+scale
+cohere
+assemblyai
+weaviate
+pinecone
+qdrant
+langchain
+chromadb
+
+# ── Product / SaaS ────────────────────────────────────────────────────────────
+figma
+notion
+airtable
+datadog
+snyk
+hashicorp
+postman
+miro
+automattic
+zapier
+webflow
+coda
+frontapp
+buffer
+ghost
+
+# ── Remote-first / Ops / Finance ──────────────────────────────────────────────
+deel
+remote
+chime
+brex
+ramp
+gusto
+rippling
+wise
+stripe
+coinbase
+robinhood
+plaid
+checkr
+lattice
+mixpanel
+amplitude
+posthog
+linear
+resend
+lucide

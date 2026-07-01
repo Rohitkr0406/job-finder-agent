@@ -1,0 +1,59 @@
+# Greenhouse Company Slugs
+# ─────────────────────────────────────────────────────────────────────────────
+# One slug per line. Lines starting with # are comments.
+# Verify a slug works: https://boards-api.greenhouse.io/v1/boards/{slug}/jobs
+# Find more companies on Greenhouse: https://www.greenhouse.io/customers
+#
+# Run  python verify_slugs.py  to check which slugs are valid before running.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── AI / ML ───────────────────────────────────────────────────────────────────
+anthropic
+cohere
+scale
+perplexity
+characterai
+imbue
+adept
+inflection
+
+# ── Fintech ───────────────────────────────────────────────────────────────────
+stripe
+coinbase
+brex
+ramp
+plaid
+gusto
+robinhood
+chime
+
+# ── Dev Tools / Cloud / Infra ─────────────────────────────────────────────────
+hashicorp
+digitalocean
+postman
+supabase
+dbtlabs
+prefect
+
+# ── Product SaaS ──────────────────────────────────────────────────────────────
+notion
+figma
+asana
+airtable
+mixpanel
+amplitude
+lattice
+checkr
+retool
+miro
+
+# ── Social / Media / Gaming ───────────────────────────────────────────────────
+discord
+reddit
+
+# ── Biotech / Deep Tech ───────────────────────────────────────────────────────
+benchling
+
+# ── Remote-first / Global ─────────────────────────────────────────────────────
+remote
+deel

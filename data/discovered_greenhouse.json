@@ -1,0 +1,398 @@
+{
+  "gusto": {
+    "company": "Gusto",
+    "job_count": 79
+  },
+  "amplitude": {
+    "company": "Amplitude",
+    "job_count": 49
+  },
+  "apollo": {
+    "company": "Apollo",
+    "job_count": 0
+  },
+  "hackerrank": {
+    "company": "HackerRank",
+    "job_count": 40
+  },
+  "goatgroup": {
+    "company": "GOAT Group",
+    "job_count": 20
+  },
+  "stripe": {
+    "company": "Stripe",
+    "job_count": 490
+  },
+  "smartasset": {
+    "company": "SmartAsset",
+    "job_count": 3
+  },
+  "instacart": {
+    "company": "Instacart",
+    "job_count": 159
+  },
+  "radar": {
+    "company": "RADAR",
+    "job_count": 19
+  },
+  "lob": {
+    "company": "Lob",
+    "job_count": 6
+  },
+  "webflow": {
+    "company": "Webflow",
+    "job_count": 24
+  },
+  "flexport": {
+    "company": "Flexport",
+    "job_count": 130
+  },
+  "algolia": {
+    "company": "Algolia",
+    "job_count": 45
+  },
+  "checkr": {
+    "company": "Checkr",
+    "job_count": 53
+  },
+  "picnicai": {
+    "company": "PicnicAI",
+    "job_count": 0
+  },
+  "hive": {
+    "company": "Hive",
+    "job_count": 13
+  },
+  "ginkgobioworks": {
+    "company": "Ginkgo Bioworks",
+    "job_count": 15
+  },
+  "qventus": {
+    "company": "Qventus",
+    "job_count": 21
+  },
+  "magic": {
+    "company": "Magic",
+    "job_count": 0
+  },
+  "tempo": {
+    "company": "Tempo",
+    "job_count": 5
+  },
+  "reach": {
+    "company": "Reach",
+    "job_count": 3
+  },
+  "givecampus": {
+    "company": "GiveCampus",
+    "job_count": 12
+  },
+  "xendit": {
+    "company": "Xendit",
+    "job_count": 19
+  },
+  "bitmovin": {
+    "company": "Bitmovin",
+    "job_count": 8
+  },
+  "instawork": {
+    "company": "Instawork",
+    "job_count": 55
+  },
+  "humaninterest": {
+    "company": "Human Interest",
+    "job_count": 61
+  },
+  "lattice": {
+    "company": "Lattice",
+    "job_count": 11
+  },
+  "apolloio": {
+    "company": "Apollo.io",
+    "job_count": 42
+  },
+  "sendbird": {
+    "company": "Sendbird",
+    "job_count": 18
+  },
+  "astranis": {
+    "company": "Astranis",
+    "job_count": 85
+  },
+  "billiontoone": {
+    "company": "BillionToOne",
+    "job_count": 105
+  },
+  "novacredit": {
+    "company": "Nova Credit",
+    "job_count": 13
+  },
+  "scaleai": {
+    "company": "Scale AI",
+    "job_count": 179
+  },
+  "aon3d": {
+    "company": "AON3D",
+    "job_count": 1
+  },
+  "nanonets": {
+    "company": "NanoNets",
+    "job_count": 12
+  },
+  "faire": {
+    "company": "Faire",
+    "job_count": 73
+  },
+  "maymobility": {
+    "company": "May Mobility",
+    "job_count": 45
+  },
+  "assemblyai": {
+    "company": "AssemblyAI",
+    "job_count": 4
+  },
+  "modernhealth": {
+    "company": "Modern Health",
+    "job_count": 17
+  },
+  "pelago": {
+    "company": "Pelago",
+    "job_count": 10
+  },
+  "groww": {
+    "company": "Groww",
+    "job_count": 16
+  },
+  "swayable": {
+    "company": "Swayable",
+    "job_count": 15
+  },
+  "meruhealth": {
+    "company": "Meru Health",
+    "job_count": 1
+  },
+  "pineparkhealth": {
+    "company": "Pine Park Health",
+    "job_count": 19
+  },
+  "prodigal": {
+    "company": "Prodigal",
+    "job_count": 11
+  },
+  "kalshi": {
+    "company": "Kalshi",
+    "job_count": 27
+  },
+  "postscript": {
+    "company": "Postscript",
+    "job_count": 6
+  },
+  "nabis": {
+    "company": "Nabis",
+    "job_count": 34
+  },
+  "alpaca": {
+    "company": "Alpaca",
+    "job_count": 54
+  },
+  "odeko": {
+    "company": "Odeko",
+    "job_count": 32
+  },
+  "pairteam": {
+    "company": "Pair Team",
+    "job_count": 46
+  },
+  "prolific": {
+    "company": "Prolific",
+    "job_count": 173
+  },
+  "embrace": {
+    "company": "Embrace",
+    "job_count": 8
+  },
+  "recidiviz": {
+    "company": "Recidiviz",
+    "job_count": 7
+  },
+  "pulley": {
+    "company": "Pulley",
+    "job_count": 0
+  },
+  "ophelia": {
+    "company": "Ophelia",
+    "job_count": 16
+  },
+  "haven": {
+    "company": "Haven",
+    "job_count": 6
+  },
+  "generalproximity": {
+    "company": "General Proximity",
+    "job_count": 10
+  },
+  "carbonchain": {
+    "company": "CarbonChain",
+    "job_count": 9
+  },
+  "ready": {
+    "company": "Ready",
+    "job_count": 0
+  },
+  "gather": {
+    "company": "Gather",
+    "job_count": 0
+  },
+  "albedo": {
+    "company": "Albedo",
+    "job_count": 7
+  },
+  "gigs": {
+    "company": "Gigs",
+    "job_count": 35
+  },
+  "prospa": {
+    "company": "Prospa",
+    "job_count": 9
+  },
+  "shepherd": {
+    "company": "Shepherd",
+    "job_count": 0
+  },
+  "niraenergy": {
+    "company": "Nira Energy",
+    "job_count": 5
+  },
+  "coast": {
+    "company": "Coast",
+    "job_count": 14
+  },
+  "bolster": {
+    "company": "Bolster",
+    "job_count": 0
+  },
+  "dots": {
+    "company": "Dots \ud83d\udcb8",
+    "job_count": 1
+  },
+  "beam": {
+    "company": "Beam",
+    "job_count": 6
+  },
+  "agency": {
+    "company": "Agency",
+    "job_count": 799
+  },
+  "attain": {
+    "company": "Attain",
+    "job_count": 15
+  },
+  "remi": {
+    "company": "Remi",
+    "job_count": 1
+  },
+  "raven": {
+    "company": "Raven",
+    "job_count": 5
+  },
+  "axle": {
+    "company": "Axle",
+    "job_count": 42
+  },
+  "reflex": {
+    "company": "Reflex",
+    "job_count": 4
+  },
+  "onshore": {
+    "company": "Onshore",
+    "job_count": 10
+  },
+  "nectar": {
+    "company": "Nectar",
+    "job_count": 0
+  },
+  "diligent": {
+    "company": "Diligent",
+    "job_count": 6
+  },
+  "feanixbiotechnologies": {
+    "company": "Feanix Biotechnologies",
+    "job_count": 4
+  },
+  "flex": {
+    "company": "Flex",
+    "job_count": 47
+  },
+  "onyx": {
+    "company": "Onyx",
+    "job_count": 0
+  },
+  "navierai": {
+    "company": "Navier AI",
+    "job_count": 2
+  },
+  "momentic": {
+    "company": "Momentic",
+    "job_count": 38
+  },
+  "newton": {
+    "company": "Newton",
+    "job_count": 1
+  },
+  "paradigm": {
+    "company": "Paradigm",
+    "job_count": 2
+  },
+  "hazel": {
+    "company": "Hazel",
+    "job_count": 15
+  },
+  "helium": {
+    "company": "Helium",
+    "job_count": 0
+  },
+  "axiom": {
+    "company": "Axiom",
+    "job_count": 20
+  },
+  "weave": {
+    "company": "Weave",
+    "job_count": 7
+  },
+  "osmosis": {
+    "company": "Osmosis",
+    "job_count": 10
+  },
+  "mesh": {
+    "company": "Mesh",
+    "job_count": 22
+  },
+  "bloom": {
+    "company": "Bloom",
+    "job_count": 0
+  },
+  "attune": {
+    "company": "Attune",
+    "job_count": 1
+  },
+  "burnt": {
+    "company": "burnt",
+    "job_count": 8
+  },
+  "icarus": {
+    "company": "Icarus",
+    "job_count": 24
+  },
+  "clara": {
+    "company": "Clara",
+    "job_count": 84
+  },
+  "superset": {
+    "company": "Superset",
+    "job_count": 9
+  },
+  "openwork": {
+    "company": "OpenWork",
+    "job_count": 12
+  }
+}
