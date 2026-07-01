@@ -13,17 +13,31 @@ def load_resume_text(path: str = "data/resume.pdf") -> str:
             "Put your resume PDF/docx/text/markdown at data/resume.pdf or specify RESUME_PATH in .env"
         )
 
-    ext = os.path.splitext(path)[1].lower()
+    errors = []
 
-    if ext == ".pdf":
+    # 1. Try parsing as PDF
+    try:
         return _parse_pdf(path)
-    if ext == ".docx":
+    except Exception as e:
+        errors.append(f"PDF Parse Error: {e}")
+
+    # 2. Try parsing as DOCX
+    try:
         return _parse_docx(path)
-    if ext in {".txt", ".md"}:
+    except Exception as e:
+        errors.append(f"DOCX Parse Error: {e}")
+
+    # 3. Try reading as plain text/markdown
+    try:
         with open(path, encoding="utf-8") as f:
             return f.read()
+    except Exception as e:
+        errors.append(f"Text Parse Error: {e}")
 
-    raise ValueError(f"Unsupported resume format: {ext}  (use .pdf, .docx, .txt, or .md)")
+    raise ValueError(
+        f"Could not parse resume file at '{path}'. Tried PDF, DOCX, and Text.\n"
+        "Details:\n" + "\n".join(errors)
+    )
 
 
 def _parse_docx(path: str) -> str:
@@ -40,7 +54,7 @@ def _parse_docx(path: str) -> str:
                 text.append("".join(texts))
         return "\n".join(text).strip()
     except Exception as e:
-        raise ValueError(f"Could not parse DOCX file: {e}")
+        raise ValueError(f"Could not parse DOCX file structure: {e}")
 
 
 def _parse_pdf(path: str) -> str:
@@ -54,6 +68,8 @@ def _parse_pdf(path: str) -> str:
     except ImportError:
         pass
     except Exception as e:
+        if "Is this really a PDF?" in str(e) or "No /Root object" in str(e) or "not a PDF" in str(e).lower():
+            raise ValueError("Not a valid PDF file structure")
         print(f"  [Resume] pdfplumber failed: {e} — trying PyPDF2 …")
 
     try:
@@ -66,6 +82,8 @@ def _parse_pdf(path: str) -> str:
             return text
     except ImportError:
         pass
+    except Exception as e:
+        raise ValueError(f"PyPDF2 failed: {e}")
 
     raise ImportError(
         "Could not parse PDF. Install pdfplumber:\n"
